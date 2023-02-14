@@ -12,6 +12,7 @@
         android:layout_height="0dp"
         android:layout_margin="5dp"
         android:padding="1dp"
+        android:background="@drawable/draw_view_bg"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/paint_colors"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,9 +21,9 @@
         <ImageView
             android:id="@+id/backgroundIV"
             android:layout_width="match_parent"
+            android:background="@drawable/draw_view_bg"
             android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/me"/>
+            android:scaleType="centerCrop"/>
 
         <com.example.app.DrawingView
             android:id="@+id/drawingView"
@@ -157,11 +158,27 @@
             android:scaleType="fitCenter"/>
 
         <ImageButton
+            android:id="@+id/save_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_save"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
             android:id="@+id/brush_button"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_margin="5dp"
             android:src="@drawable/ic_brush"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:id="@+id/undo_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_undo"
             android:scaleType="fitCenter"/>
 
     </LinearLayout>
